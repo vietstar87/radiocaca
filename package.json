@@ -1,0 +1,16 @@
+{
+  "name": "radiocaca",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ vietstar87/radiocaca",
+    "create-local": "graph create --node http://localhost:8020/ vietstar87/radiocaca",
+    "remove-local": "graph remove --node http://localhost:8020/ vietstar87/radiocaca",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 vietstar87/radiocaca"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.24.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
