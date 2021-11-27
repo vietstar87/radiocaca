@@ -104,12 +104,6 @@ export class Contract extends ethereum.SmartContract {
     return ethereum.CallResult.fromValue(value[0].toI32());
   }
 
-  _name(): string {
-    let result = super.call("_name", "_name():(string)", []);
-
-    return result[0].toString();
-  }
-
   try__name(): ethereum.CallResult<string> {
     let result = super.tryCall("_name", "_name():(string)", []);
     if (result.reverted) {
